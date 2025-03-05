@@ -1,0 +1,51 @@
+{
+  "name": "pingtrack",
+  "version": "0.1.0",
+  "description": "PingTrack - A CLI tool for website uptime monitoring and screenshots.",
+  "main": "dist/index.js",
+  "bin": {
+    "pingtrack": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anastasrado/pingtrack.git"
+  },
+  "keywords": [
+    "cli",
+    "website-monitoring",
+    "uptime",
+    "screenshots"
+  ],
+  "author": "Anastas Radosavljevic",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/anastasrado/pingtrack/issues"
+  },
+  "homepage": "https://github.com/anastasrado/pingtrack#readme",
+  "dependencies": {
+    "@types/inquirer": "^9.0.7",
+    "axios": "^1.8.1",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.4.2",
+    "puppeteer": "^24.3.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.0",
+    "@types/node": "^22.13.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
